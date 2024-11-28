@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    line-height: 25px;
+}
+
+@font-face {
+    font-family: bijoyo;
+    src: url(fonts/SutonnyMJ.ttf);
+}
+
+@font-face {
+    font-family: bijoy;
+    src: url(fonts/SutonnyOMJ.ttf);
+}
+
+body{
+    background-color: rgba(221, 221, 221, 0.637);
+    font-family: 'bijoy';
+}
+
+.wrap{
+    width: 100%;
+    height: min-content;
+    margin: auto;
+}
+
+.content{
+    width: 90%;
+    height: min-content;
+    margin: auto;
+}
+
+.heading{
+    font-size: 15px;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-family: 'bijoy';
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+#bpi-logo{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    z-index: 2;
+    filter: drop-shadow(3px 3px 10px rgba(255, 255, 255, 0.692));
+}
+
+.hero{
+    width: 100%;
+    height: min-content;
+    position: relative;
+    /* background-color: bisque; */
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.616));
+}
+
+#bpi-hero{
+    width: 100%;
+    height: 250px;
+    filter: contrast(180%) blur(3px);
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.overlay{
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(3, 0, 197, 0.26);
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+        top: 110px;
+    }
+    to{
+        opacity: 1;
+        top: 100px;
+    }
+}
+
+
+
+@keyframes zoom-in{
+    from{
+        opacity: 0;
+        font-size: 0px;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.nav{
+    display: none;
+}
+
+.headline{
+    width:90%;
+    background-color: rgb(42, 165, 149);
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.671);
+}
+
+.nmv{
+    width: 100%;
+    height: 800px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.notice-board, .mv{
+    height: min-content;
+}
+
+.notice-board ul{
+    margin-top: 10px;
+    background-color: white;
+    height: 150px;
+    background-color: white;
+    /* border-radius: 30px; */
+    padding: 30px;
+    list-style-image: url(images/notice.png);
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.274);
+}
+
+.notice-board li{
+    font-family: 'bijoy';
+}
+
+.notice-board li a{
+    text-decoration: dotted underline;
+    color: black;
+}
+
+.mv h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mv p{
+    margin-top: 10px;
+    background-color: white;
+    height: min-content;
+    background-color: white;
+    /* border-radius: 30px; */
+    padding: 10px;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.274);
+}
+
+.mv audio{
+    margin-top: 20px;
+    width: 100%;
+    filter: drop-shadow(3px 3px 30px rgba(0, 0, 0, 0.274));
+}
+
+.about-short h1{
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+.about-short{
+    margin-top: 30px;
+    width: 100%;
+    height: 1500px;
+    font-family: 'bijoy';
+    font-size: 20px;
+}
+
+.text{
+    background-color: white;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.274);
+    font-weight: 500;
+}
+
+.about-short p{
+    padding: 20px 30px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+#bpi-campus{
+    width: 100%;
+    filter: drop-shadow(3px 3px 30px rgba(0, 0, 0, 0.274));
+}
+
+.stickynav{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.171);
+}
+
+.bpilogo{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-family: 'bijoy';
+}
+
+.bpilogo h1 img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.bpilogo a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.links{
+    display: none;
+    background-color: white;
+}
+
+.links ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.links a{
+    font-family: 'bijoy';
+    font-size: 20px;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover{
+    color: orangered;
+}
+
+.links li{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.452);
+}
+
+.links .dropdown{
+    display: none;
+    width: 90%;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    padding: 5px;
+    border: 1px solid black;
+    /* border-radius: 5px; */
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473); */
+}
+
+.links .dropdown a{
+    display: block;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: black;
+    font-family: 'bijoy';
+    font-size: 20px;
+    padding: 10px;
+    animation: none;
+    border-bottom: 1px solid orangered;
+}
+
+.links .dropdown a:hover{
+    color: orangered;
+    border-bottom: 1px solid orangered;
+}
+
+.links li:hover .dropdown{
+    display: block;
+}
+
+.links-icon{
+    padding: 1px 5px;border-radius: 3px;
+    position: fixed;
+    top: 7px;
+    right: 20px;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.288));
+    /* border: 1px solid black; */
+}
+
+.links-icon img{
+    vertical-align: middle;
+}
+
+
+
+.topicon{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    z-index: 2;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.514);
+    border-radius: 5px;
+}
+
+.topicon a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer{
+    text-align: center;
+    width: 100%;
+    height: min-content;
+    padding: 20px 0px;
+    background-color: black;
+    color: white;
+    font-family: calibri;
+}
